@@ -36,6 +36,13 @@ namespace Blog.Core.IRepository.Base
         Task<long> Add(TEntity model);
 
         /// <summary>
+        /// 添加（返回实体）
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        Task<TEntity> AddTEntity(TEntity model);
+
+        /// <summary>
         /// 批量添加
         /// </summary>
         /// <param name="listEntity"></param>

@@ -1255,6 +1255,16 @@
             金额
             </summary>
         </member>
+        <member name="P:Blog.Core.Model.Models.TestDemo.TestName">
+            <summary>
+            测试demo名称
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.TestDemo.Version">
+            <summary>
+            测试版本
+            </summary>
+        </member>
         <member name="T:Blog.Core.Model.Models.Topic">
             <summary>
             Tibug 类别

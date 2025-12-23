@@ -62,6 +62,16 @@ namespace Blog.Core.Services.BASE
         }
 
         /// <summary>
+        /// 写入实体数据(返回实体)
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public async Task<TEntity> AddTEntity(TEntity model)
+        {
+            return await BaseDal.AddTEntity(model);
+        }
+
+        /// <summary>
         /// 批量插入实体(速度快)
         /// </summary>
         /// <param name="listEntity">实体集合</param>

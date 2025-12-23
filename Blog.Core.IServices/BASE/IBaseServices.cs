@@ -17,6 +17,8 @@ namespace Blog.Core.IServices.BASE
         Task<List<TEntity>> QueryByIDs(object[] lstIds);
 
         Task<long> Add(TEntity model);
+        
+        Task<TEntity> AddTEntity(TEntity model);
 
         Task<List<long>> Add(List<TEntity> listEntity);
 

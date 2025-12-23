@@ -122,6 +122,19 @@ namespace Blog.Core.Repository.Base
         }
 
         /// <summary>
+        /// 写入实体数据（返回实体）
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public async Task<TEntity> AddTEntity(TEntity entity)
+        {
+            var insert = _db.Insertable(entity);
+
+            //这里你可以返回TEntity，这样的话就可以获取id值，无论主键是什么类型
+            return await insert.ExecuteReturnEntityAsync();
+        }
+
+        /// <summary>
         /// 写入实体数据
         /// </summary>
         /// <param name="entity">实体类</param>
